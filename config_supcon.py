@@ -33,7 +33,7 @@ def parse_option():
                         help='weight decay')
     parser.add_argument('--momentum', type=float, default=0.9,
                         help='momentum')
-    parser.add_argument('--train_csv_path', type=str, default='train data csv')
+    #parser.add_argument('--train_csv_path', type=str, default='train data csv')
     parser.add_argument('--test_csv_path', type=str, default='test data csv')
     parser.add_argument('--train_image_path', type=str, default='train data csv')
     parser.add_argument('--test_image_path', type=str, default='test data csv')
