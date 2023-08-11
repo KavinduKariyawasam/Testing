@@ -17,7 +17,7 @@ def parse_option():
                         help='number of training epochs')
     parser.add_argument('--device', type=str, default='cuda:0')
     parser.add_argument('--train_csv_path', type=str, default='path to csv file')
-    parser.add_argument('--train_image_path', type=str, default='path to image file')
+    #parser.add_argument('--train_image_path', type=str, default='path to image file')
     # optimization
     parser.add_argument('--learning_rate', type=float, default=0.001,
                         help='learning rate')
@@ -35,7 +35,7 @@ def parse_option():
                         help='momentum')
     #parser.add_argument('--train_csv_path', type=str, default='train data csv')
     parser.add_argument('--test_csv_path', type=str, default='test data csv')
-    #parser.add_argument('--train_image_path', type=str, default='train data csv')
+    parser.add_argument('--train_image_path', type=str, default='train data csv')
     parser.add_argument('--test_image_path', type=str, default='test data csv')
     parser.add_argument('--results_dir', type=str, default='/home/kiran/Desktop/Dev/SupCon_OCT_Clinical/results.txt')
     parser.add_argument('--percentage', type=int, default=10,
