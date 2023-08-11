@@ -1,6 +1,6 @@
 
 
-from config.config_linear import parse_option
+from config_linear import parse_option
 import numpy as np
 import torch
 
@@ -9,13 +9,13 @@ from sklearn.manifold import TSNE
 
 import matplotlib.patheffects as PathEffects
 
-from models.resnet import  SupConResNet
+from resnet import  SupConResNet
 import torch.backends.cudnn as cudnn
 from torchvision import transforms, datasets
 import matplotlib.pyplot as plt
 import seaborn as sns
 
-from datasets.biomarker import BiomarkerDatasetAttributes
+from biomarker import BiomarkerDatasetAttributes
 
 import scipy.stats as stats
 
