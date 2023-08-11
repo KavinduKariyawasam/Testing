@@ -1,12 +1,12 @@
 import torch
-from utils.utils import AverageMeter,warmup_learning_rate,accuracy
+from utils import AverageMeter,warmup_learning_rate,accuracy
 import sys
 import time
 import numpy as np
 from sklearn.metrics import precision_score,recall_score
-from config.config_linear import parse_option
-from utils.utils import set_loader_new, set_model, set_optimizer, adjust_learning_rate
-from models.resnet import SupCEResNet_Fusion
+from config_linear import parse_option
+from utils import set_loader_new, set_model, set_optimizer, adjust_learning_rate
+from resnet import SupCEResNet_Fusion
 def train_supervised_fusion(train_loader, model,criterion, optimizer, epoch, opt):
     """one epoch training"""
     model.train()
