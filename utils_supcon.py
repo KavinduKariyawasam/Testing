@@ -118,7 +118,7 @@ def set_loader(opt):
     elif opt.dataset == 'Prime_TREX_DME_Fixed' or opt.dataset == 'Prime_TREX_Alpha' \
             or opt.dataset == 'Patient_Split_2_Prime_TREX' or opt.dataset == 'Patient_Split_3_Prime_TREX':
         #csv_path_train = './final_csvs_' + str(opt.patient_split) +'/datasets_combined/prime_trex_compressed.csv'
-        csv_path_train = '/kaggle/input/olives-vip-cup-2023/2023 IEEE SPS Video and Image Processing (VIP) Cup - Ophthalmic Biomarker Detection/TRAIN/Training_Biomarker_Data.csv'    #Updated 
+        csv_path_train = '/kaggle/input/csv-file/Training_Biomarker_Data.csv'    #Updated 
         data_path_train = opt.train_image_path
         train_dataset = CombinedDataset(csv_path_train, data_path_train, transforms=TwoCropTransform(train_transform))
     elif opt.dataset == 'Prime_TREX_DME_Discrete':
