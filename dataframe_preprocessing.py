@@ -347,7 +347,7 @@ def prime_biomarker_processing(dir_start):
         df = pd.concat([df_s1,df_s2])
 
         for i in range(0,len(df)):
-            header = '/data/Datasets/Prime_FULL'
+            header = '/kaggle/input/olives-vip-cup-2023/2023 IEEE SPS Video and Image Processing (VIP) Cup - Ophthalmic Biomarker Detection/TRAIN/OLIVES/Prime_FULL'   #changed 
             file_path = df.iloc[i,0]
             scan_num = df.iloc[i,1]
 
