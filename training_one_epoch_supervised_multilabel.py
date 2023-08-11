@@ -1,12 +1,12 @@
 import torch
-from utils.utils import AverageMeter,warmup_learning_rate,accuracy
+from utils import AverageMeter,warmup_learning_rate,accuracy
 import sys
 import time
 import numpy as np
-from config.config_linear import parse_option
-from utils.utils import set_loader_new, set_model, set_optimizer, adjust_learning_rate, accuracy_multilabel
+from config_linear import parse_option
+from utils import set_loader_new, set_model, set_optimizer, adjust_learning_rate, accuracy_multilabel
 from sklearn.metrics import roc_auc_score
-from models.resnet import SupCEResNet
+from resnet import SupCEResNet
 
 def train_supervised_multilabel(train_loader, model,criterion, optimizer, epoch, opt):
     """one epoch training"""
