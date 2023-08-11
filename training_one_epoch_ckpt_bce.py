@@ -1,11 +1,11 @@
 import torch
-from utils.utils import AverageMeter,warmup_learning_rate
+from utils import AverageMeter,warmup_learning_rate
 import sys
 import time
 import numpy as np
 from sklearn.metrics import roc_auc_score
-from config.config_linear import parse_option
-from utils.utils import set_loader_new, set_model, set_optimizer, adjust_learning_rate
+from config_linear import parse_option
+from utils import set_loader_new, set_model, set_optimizer, adjust_learning_rate
 def main_bce():
     best_acc = 0
     opt = parse_option()
